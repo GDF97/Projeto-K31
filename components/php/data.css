@@ -26,13 +26,13 @@ body {
 }
 
 .content_container > .content_metodo_date > div {
-	display: flex;
-	flex-direction: column;
-	gap: .25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
   margin-left: 1rem;
 }
 
-.content_container > .content_metodo_date > div > span{
-	display: flex;
-	gap: .25rem;
+.content_container > .content_metodo_date > div > span {
+  display: flex;
+  gap: 0.25rem;
 }

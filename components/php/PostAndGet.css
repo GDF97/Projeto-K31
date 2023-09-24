@@ -19,13 +19,13 @@ body {
   font-size: 3rem;
 }
 
-.content > div{
-	display: flex;
-	flex-direction: column;
-	gap: .25rem;
-	margin-left: 1rem;
+.content > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-left: 1rem;
 }
 
-strong{
-	text-decoration: underline;
+strong {
+  text-decoration: underline;
 }
