@@ -1,1 +1,1 @@
-# Está pasta será responsável por manter todos os scripts de php
+# Está pasta será responsável por manter o Javascript

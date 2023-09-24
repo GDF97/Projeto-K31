@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Data - PHP</title>
 		<link rel="stylesheet" href="./data.css">
-		<link rel="stylesheet" href="../../css/navbar.css">
+		<link rel="stylesheet" href="../styles/navbar.css">
 </head>
 <body>
 		<header class="header">
-      <nav class="header_nav">
+			<nav class="header_nav">
+        <a href="../../index.html" class="nav_item">Inicio</a>
         <a href="../pages/login.html" class="nav_item">Login</a>
         <a href="../pages/cadastro.html" class="nav_item"> Cadastro </a>
         <a href="../pages/menu.html" class="nav_item">Menu</a>
@@ -19,6 +20,7 @@
         <a href="./post.php" class="nav_item">$_POST</a>
 			</nav>
 		</header>
+
 		<section class="content_container">
 			<article class="content_metodo_date">
 				<h1> Usando o metodo Date </h1>
@@ -38,6 +40,17 @@
 						echo "<p>Dia da Semana: ". $diaDaSemana. "</p>";
 						echo "<br>";
 						echo "<span>Dia da Semana traduzida: <p class=diadasemana></p> </span>"
+					?>
+				</div>
+			</article>
+			<article class="content_metodo_date">
+				<h1> Usando o metodo GetDate </h1>
+				<div>
+					<?php 
+						$dataGetDate = getdate();
+						echo "<p> Horário: ".$dataGetDate["hours"].":".$dataGetDate["minutes"]."</p>";
+						echo "<br>";
+						echo "<p> Data atual: ".$dataGetDate["mday"]."/".$dataGetDate["mon"]."/".$dataGetDate["year"]."</p>";
 					?>
 				</div>
 			</article>

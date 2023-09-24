@@ -4,12 +4,14 @@
     <title>Cadastro</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../../css/cadastro.css" rel="stylesheet" />
-    <link href="../../css/navbar.css" rel="stylesheet" />	
+    <link href="../styles/cadastro.css" rel="stylesheet" />
+    <link href="../styles/navbar.css" rel="stylesheet" />
+    <script src="../scripts/cadastro.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="header_nav">
+        <a href="../../index.html" class="nav_item">Inicio</a>
         <a href="./login.html" class="nav_item">Login</a>
         <a href="./cadastro.html" class="nav_item"> Cadastro </a>
         <a href="./menu.html" class="nav_item">Menu</a>
@@ -31,7 +33,12 @@
         <span>
           <h1>Cadastro</h1>
         </span>
-        <form action="../../scripts/cadastro.php" class="form" name="frmCadastro" method="POST">
+        <form
+          action="../php/post.php"
+          class="form"
+          name="frmCadastro"
+          method="POST"
+        >
           <span class="input-wrapper">
             <label for="">Name</label>
             <input
@@ -42,19 +49,14 @@
             />
           </span>
           <span class="input-wrapper">
-						<label for="">Email</label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              autocomplete="off"
-            />
+            <label for="">Email</label>
+            <input type="text" id="email" name="email" autocomplete="off" />
           </span>
           <span class="input-wrapper">
             <label for="">Password</label>
             <input type="password" id="password" name="password" />
           </span>
-          <button type="submit">Cadastrar</button>
+          <button type="submit" id="btnCadastrar">Cadastrar</button>
         </form>
       </section>
     </main>
