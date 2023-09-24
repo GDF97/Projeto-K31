@@ -57,16 +57,16 @@
 		</section>
 		<script>
 			const displayDia = document.querySelector(".diadasemana")
-      const diaSemana = "<?php echo $diaDaSemana ?>"
-      const dias =  {
-              Monday: "Segunda-Feira",
-              Tuesday: "Terça-Feira",
-              Wednesday: "Quarta-Feira",
-              Thursday: "Quinta-Feira",
-              Friday: "Sexta-Feira",
-              Saturday: "Sábado",
-              Sunday: "Domingo"
-        }
+      		const diaSemana = "<?php echo $diaDaSemana ?>"
+      		const dias =  {
+              	Monday: "Segunda-Feira",
+              	Tuesday: "Terça-Feira",
+              	Wednesday: "Quarta-Feira",
+              	Thursday: "Quinta-Feira",
+              	Friday: "Sexta-Feira",
+              	Saturday: "Sábado",
+              	Sunday: "Domingo"
+        	}
 			displayDia.textContent = dias[diaSemana];
 		</script> 
 </body>
