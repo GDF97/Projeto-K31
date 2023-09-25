@@ -13,11 +13,10 @@ $PROJECT_ROOT
 |
 ├── escopo-excluido
 |
-├── assets              # Imagens e Icones
-|   ├── icons
-|   └── images
-|
 └── components
+    ├───assets
+    |    ├───icons
+    |    └───images
     ├── pages           # Páginas HTML
     ├── php             # Páginas PHP e Arquvios CSS
     ├── scripts         # Scripts JS + PHP
