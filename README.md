@@ -1,8 +1,6 @@
 # Projeto K31
 
-###
-
-Projeto de PW utilizando HTML, CSS, JavaScript e PHP
+#### Projeto de PW utilizando HTML, CSS, JavaScript, PHP e MySQL
 
 ```
 $PROJECT_ROOT
@@ -11,14 +9,23 @@ $PROJECT_ROOT
 ├── db
 |   └── **/*.sql        # Banco de Dados
 |
-├── escopo-excluido
+├── tests               # Pasta para realizar testes
 |
-└── components
-    ├───assets
-    |    ├───icons
-    |    └───images
-    ├── pages           # Páginas HTML
-    ├── php             # Páginas PHP e Arquvios CSS
-    ├── scripts         # Scripts JS + PHP
+└── src
+    ├── assets          # Imagens e Ícones
+    ├── components      # Códigos que reutilizáveis
+    ├── php             # Páginas PHP
+    ├── scripts         # Scripts PHP
     └── styles          # Arquivos CSS
 ```
+
+### Coisas para fazer
+
+- [ ] Melhorar o Design
+- [ ] Aplicar a Responsividade
+- [ ] Melhorar o desempenho da aplicação
+- Aplicar o CRUD completo
+  - [x] CREATE
+  - [x] READ
+  - [ ] UPDATE
+  - [ ] DELETE

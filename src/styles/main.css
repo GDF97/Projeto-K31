@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --color-dark-blue: #323643;
+  --color-menu: #323643;
+  --color-white: #f1f6f9;
+  --color-white-bg: #f7f7f7;
+  --color-blue: #2965f1;
+  --color-btn-delete: #702c2c;
+  --color-grey-blue: #606470;
+  --color-sky-blue: #93deff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  position: relative;
+}

@@ -1,0 +1,175 @@
+@import url("./main.css");
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-white-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  width: 425px;
+  height: fit-content;
+  border-radius: 14px;
+  background-color: rgba(96, 100, 112, 0.4);
+  box-shadow: 8px 8px 4px rgba(96, 100, 112, 0.4);
+  outline: 1px solid white;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card > h1 {
+  font-size: 2.75rem;
+  color: white;
+}
+
+.card > .frm_login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.card > .frm_login > .input_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card > .frm_login > .input_group > label {
+  font-size: 20px;
+  color: white;
+}
+
+.card > .frm_login > .input_group > input {
+  padding: 0.6rem;
+  outline: 1px solid white;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.card > .frm_login > button {
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: var(--color-sky-blue);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card > .frm_login > button:hover {
+  background-color: #77b3cc;
+}
+
+.quadradoUm {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-grey-blue);
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  opacity: 0;
+  transform: rotate(50deg);
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  animation: praCima 2.75s linear infinite forwards 1s;
+}
+
+.quadradoDois {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-grey-blue);
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  border-radius: 20px;
+  transform: rotate(50deg);
+  position: absolute;
+  left: 100px;
+  bottom: 275px;
+  opacity: 0;
+  animation: praCima 3s linear infinite forwards 0.5s;
+}
+
+.quadradoTres {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-grey-blue);
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  border-radius: 20px;
+  transform: rotate(50deg);
+  position: absolute;
+  left: 550px;
+  bottom: 275px;
+  animation: praCima 3s linear infinite forwards;
+}
+
+.quadradoQuatro {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color-grey-blue);
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  opacity: 0;
+  transform: rotate(50deg);
+  border-radius: 20px;
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  animation: praCima 2.75s linear infinite forwards 1s;
+}
+
+.quadradoCinco {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-grey-blue);
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  border-radius: 20px;
+  transform: rotate(50deg);
+  position: absolute;
+  right: 100px;
+  bottom: 275px;
+  opacity: 0;
+  animation: praCima 3s linear infinite forwards 0.5s;
+}
+
+.quadradoSeis {
+  width: 100px;
+  height: 100px;
+  background-color: var(--color-grey-blue);
+  box-shadow: inset 10px 10px 10px rgba(50, 54, 67, 0.8);
+  border-radius: 20px;
+  transform: rotate(50deg);
+  position: absolute;
+  right: 550px;
+  bottom: 275px;
+  animation: praCima 3s linear infinite forwards;
+}
+
+@keyframes praCima {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-150px) rotate(45deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-300px) rotate(90deg);
+    opacity: 0;
+  }
+}
+
+.zindex {
+  z-index: 1;
+}

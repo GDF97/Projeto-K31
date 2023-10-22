@@ -1,0 +1,49 @@
+@import url("./main.css");
+
+.menu {
+  width: 300px;
+  min-height: 100vh;
+  background-color: var(--color-menu);
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.menu > div {
+  padding-left: 1rem;
+}
+
+.menu > center > .menu_title {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.menu > div > .menu_items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menu > div > .menu_items > li {
+  padding: 0.25rem;
+}
+
+.menu > div > .menu_items > li.active {
+  background-color: var(--color-grey-blue);
+}
+
+.menu > div > .menu_items > li.active > button {
+  color: var(--color-sky-blue);
+}
+
+.menu > div > .menu_items > li > button {
+  width: 100%;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 24px;
+}

@@ -1,0 +1,63 @@
+@import url(./main.css);
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--color-white-bg);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > .cadastro-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .cadastro-section > form {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+main > .cadastro-section > form > .input_group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+main > .cadastro-section > form > .input_group > label {
+  font-size: 24px;
+}
+
+main > .cadastro-section > form > .input_group > input {
+  padding: 0.75rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-dark-blue);
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+}
+
+main > .cadastro-section > form > button {
+  min-height: 50px;
+  padding: 1rem;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-blue);
+  color: white;
+  cursor: pointer;
+}
+
+main > .cadastro-section > form > button:hover {
+  background-color: #163172;
+}

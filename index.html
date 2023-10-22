@@ -1,29 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Inicio</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="components/styles/index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="components/styles/navbar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page - K31</title>
+    <link rel="stylesheet" href="src/styles/index.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="header_nav">
-        <a href="./components/pages/login.html" class="nav_item">Login</a>
-        <a href="./components/pages/cadastro.html" class="nav_item">
-          Cadastro
-        </a>
-        <a href="./components/pages/menu.html" class="nav_item">Menu</a>
-        <a href="./components/php/tabela.php" class="nav_item">Tabela</a>
-        <a href="./components/php/data.php" class="nav_item">Data</a>
-        <a href="./components/php/get.php" class="nav_item">$_GET</a>
-        <a href="./components/php/post.php" class="nav_item">$_POST</a>
-      </nav>
-      <div>
-        <button id="btnTheme">O</button>
-        <button id="btnInfo">?</button>
-      </div>
-    </header>
+    <main class="container">
+      <section class="card zindex">
+        <h1>Login</h1>
+        <form class="frm_login" action="./src/scripts/login.php" method="post">
+          <div class="input_group">
+            <label for="">Username</label>
+            <input
+              type="text"
+              autocomplete="off"
+              name="username"
+              id="username"
+            />
+          </div>
+          <div class="input_group">
+            <label for="">Password</label>
+            <input
+              type="password"
+              autocomplete="off"
+              name="password"
+              id="password"
+            />
+          </div>
+          <button>Entrar</button>
+        </form>
+      </section>
+      <div class="quadradoUm"></div>
+      <div class="quadradoDois"></div>
+      <div class="quadradoTres"></div>
+      <div class="quadradoQuatro"></div>
+      <div class="quadradoCinco"></div>
+      <div class="quadradoSeis"></div>
+    </main>
   </body>
 </html>
