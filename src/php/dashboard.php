@@ -8,6 +8,7 @@
     <?php include "../components/Navbar/headers.php"?>
 
     <style>
+        @import url(../styles/main.css);
         body{
             width: 100%;
             min-height: 100vh;
@@ -16,10 +17,12 @@
 
         main{
             width: 100%;
+            background-color: var(--color-white-bg);
         }
     </style>
 </head>
 <body>    
+    <p id="paginaAtual" style="display: none;">dashboard.php</p>
     <?php include "../components/Menu/menu.php"; ?>
     <main>
         <?php  include "../components/Navbar/navbar.php"; ?>

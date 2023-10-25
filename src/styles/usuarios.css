@@ -22,13 +22,12 @@ main > .lista_de_usuarios_section {
 }
 
 main > .lista_de_usuarios_section > .lista_de_usuarios_article {
-  width: 1360px;
-  height: 700px;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-items: center;
   padding: 1rem;
 }
 

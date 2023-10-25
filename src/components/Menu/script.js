@@ -1,17 +1,14 @@
-const getParamsPage = new URLSearchParams(window.location.search);
-const paramPage = getParamsPage.get("page");
+const getNameOfPage = document.getElementById("paginaAtual").innerText;
 const buttons = document.querySelectorAll(".btnMenu");
 
-if (!paramPage) {
-} else {
-  console.log(paramPage);
-  buttons.forEach((btn) => {
-    if (btn.value == paramPage) {
-      let parentLi = btn.closest("li");
-      parentLi.classList.add("active");
-    }
-  });
-}
+console.log(getNameOfPage);
+
+buttons.forEach((btn) => {
+  if (btn.value == getNameOfPage) {
+    let parentLi = btn.closest("li");
+    parentLi.classList.add("active");
+  }
+});
 
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -21,16 +18,3 @@ buttons.forEach((btn) => {
     window.location.href = urlFormatada;
   });
 });
-
-// const btnActive = document.querySelector(".btnMenu.active");
-// const parentLi = btn.closest("li");
-// const liActive = document.querySelector("li.active");
-// if (btn != btnActive) {
-//   btnActive.classList.remove("active");
-//   btn.classList.add("active");
-// }
-
-// if (parentLi != liActive) {
-//   liActive.classList.remove("active");
-//   parentLi.classList.add("active");
-// }

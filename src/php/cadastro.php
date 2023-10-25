@@ -11,6 +11,7 @@
     <?php include "../components/Modal/headers.php"; ?>
   </head>
   <body>
+    <p id="paginaAtual" style="display: none;">cadastro.php</p>
     <?php include "../components/Menu/menu.php"; ?>
     <main>
       <?php  include "../components/Navbar/navbar.php"; ?>

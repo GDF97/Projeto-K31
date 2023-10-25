@@ -13,3 +13,9 @@ CREATE TABLE tb_usuario (
 describe tb_usuario;
 
 insert into tb_usuario(nm_usuario, nm_login, cd_senha, sg_nivel) values ("Pedro Silva", "LoginPEDRO", "ADM123", "3"), ("Francisco Pedro", "LoginFRANCISCO", "ADM1234", "3");
+
+CREATE TABLE tb_teste (
+    idTESTE INT PRIMARY KEY AUTO_INCREMENT,
+    nm_teste VARCHAR(20),
+    cd_senha VARCHAR(10)
+);

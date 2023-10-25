@@ -10,9 +10,13 @@
         if(!empty($user_nome) && !empty($user_login) && !empty($user_senha) && !empty($user_nivel)){
             try{
                 $sql = "insert into tb_usuario(nm_usuario, nm_login, cd_senha, sg_nivel)
-                 values('$user_nome','$user_login','$user_senha','$user_nivel')";
+                 values(:nm_usuario, :nm_login, :cd_senha, :sg_nivel)";
                 
                 $query = $pdo->prepare($sql);
+                $query -> bindParam(":nm_usuario", $user_nome);
+                $query -> bindParam(":nm_login", $user_login);
+                $query -> bindParam(":cd_senha", $user_senha);
+                $query -> bindParam(":sg_nivel", $user_nivel);
                 $query->execute();
     
                 echo "<script> window.location.href = '../php/usuarios.php'</script>";

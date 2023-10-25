@@ -9,6 +9,7 @@
     <?php include "../components/Navbar/headers.php" ?>
   </head>
   <body>
+    <p id="paginaAtual" style="display: none;">usuarios.php</p>
     <?php include "../components/Menu/menu.php"; ?>
     <main>
       <?php  include "../components/Navbar/navbar.php"; ?>
@@ -20,7 +21,8 @@
               $query = $pdo->prepare($sql);
               $query->execute();
 
-              while($campos = $query->fetch(PDO::FETCH_ASSOC)){
+              $resultados = $query->fetchAll(PDO::FETCH_ASSOC);
+              foreach($resultados as $campos){
                 echo "<div class='card_usuario'>";
                 echo "<p>Código: <strong>".$campos['id_usuario']."</strong></p>";
                 echo "<p>Nome: <strong>".$campos['nm_usuario']."</strong></p>";
