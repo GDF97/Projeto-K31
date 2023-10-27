@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $nomeUsuario = $_SESSION['usuario'];
+  $nomeDeUsuario = $_SESSION['user'];
 ?>
 
 <header class="header">
@@ -9,7 +9,7 @@
     <p id="diaDaSemana"></p>
   </div>
   <div class="right_header_item">
-    <p id="usuario"><?php echo $nomeUsuario; ?></p>
+    <p id="usuario"><?php echo $nomeDeUsuario; ?></p>
     <div class="frame"></div>
   </div>
 </header>

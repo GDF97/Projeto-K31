@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/usuarios.css" />
     <?php include "../components/Menu/headers.php" ?>
     <?php include "../components/Navbar/headers.php" ?>
+    <?php include "../components/ModalDelete/headers.php" ?>
   </head>
   <body>
     <p id="paginaAtual" style="display: none;">usuarios.php</p>
@@ -28,11 +29,22 @@
                 echo "<p>Nome: <strong>".$campos['nm_usuario']."</strong></p>";
                 echo "<p>Login: <strong>".$campos['nm_login']."</strong></p>";
                 echo "<p>Nível: <strong>".$campos['sg_nivel']."</strong></p>";
+                echo 
+                    "<div class=card_buttons>
+                      <button><i class='bx bx-edit-alt'></i></button>
+                      <button><i class='bx bx-trash'></i></button>
+                    </div>";
+                echo 
+                    "<div class='card_buttons cover'>
+                      <button class='btn btnEditUsuario'></button>
+                      <button class='btn btnDeleteUsuario' value=".$campos['id_usuario']."></button>
+                    </div>";
                 echo "</div>";
               }
-            ?>
+              ?>
         </article>
       </section>
     </main>
+    <?php include "../components/ModalDelete/modal.php"; ?>
   </body>
 </html>
