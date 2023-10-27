@@ -27,5 +27,5 @@ $PROJECT_ROOT
 - Aplicar o CRUD completo
   - [x] CREATE
   - [x] READ
-  - [x] UPDATE
-  - [ ] DELETE
+  - [ ] UPDATE
+  - [x] DELETE
