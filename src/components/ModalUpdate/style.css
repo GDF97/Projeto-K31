@@ -1,0 +1,88 @@
+@import url(../../styles/main.css);
+
+.ModalUpdate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.303);
+  backdrop-filter: blur(10px);
+}
+
+.ModalUpdate.active {
+  display: flex;
+}
+
+.ModalUpdate > .modal-update-card {
+  width: 450px;
+  height: fit-content;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.ModalUpdate > .modal-update-card > h1 {
+  padding-bottom: 2rem;
+  font-size: 32px;
+  text-align: center;
+}
+
+.ModalUpdate > .modal-update-card > form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#inputUpdate {
+  width: 100%;
+  padding: 0.35rem;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: var(--color-dark-blue);
+  outline: none;
+  min-height: 35px;
+}
+
+.ModalUpdate > .modal-update-card > form > .inputGroup:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ModalUpdate > .modal-update-card > form > .buttonWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ModalUpdate > .modal-update-card > form > .buttonWrapper > button {
+  width: 150px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.ModalUpdate
+  > .modal-update-card
+  > form
+  > .buttonWrapper
+  > button[type="submit"] {
+  background-color: var(--color-grey-blue);
+}
+
+.ModalUpdate
+  > .modal-update-card
+  > form
+  > .buttonWrapper
+  > button[type="reset"] {
+  background-color: var(--color-btn-delete);
+}

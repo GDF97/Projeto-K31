@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Consulta Usuários</title>
     <link rel="stylesheet" href="../styles/usuarios.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <?php include "../components/Menu/headers.php" ?>
     <?php include "../components/Navbar/headers.php" ?>
     <?php include "../components/ModalDelete/headers.php" ?>
+    <?php include "../components/ModalUpdate/headers.php" ?>
   </head>
   <body>
     <p id="paginaAtual" style="display: none;">usuarios.php</p>
@@ -43,6 +45,7 @@
               }
               ?>
         </article>
+        <?php include "../components/ModalUpdate/modal.php"; ?>
       </section>
     </main>
     <?php include "../components/ModalDelete/modal.php"; ?>

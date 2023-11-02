@@ -20,6 +20,7 @@ main > .lista_de_usuarios_section {
   align-items: center;
   justify-content: center;
   overflow-y: hidden;
+  position: relative;
 }
 
 main > .lista_de_usuarios_section > .lista_de_usuarios_article {
